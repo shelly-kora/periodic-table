@@ -1,9 +1,100 @@
-     <!DOCTYPE html>
-     <html>
-     <head>
-         <meta http-equiv="refresh" content="0; url=periodic_table.html">
-     </head>
-     <body>
-         正在跳转到元素周期表...
-     </body>
-     </html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="为小学生设计的互动式化学元素周期表，包含各元素的发现历史、趣味图片和视频">
+    <meta name="keywords" content="元素周期表,化学,小学生,教育,互动学习">
+    <title>化学元素周期表 - 小学生学习版</title>
+    <style>
+        body {
+            font-family: 'Arial Rounded MT Bold', 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            text-align: center;
+            color: #2c3e50;
+        }
+        
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            width: 90%;
+        }
+        
+        h1 {
+            margin-bottom: 20px;
+        }
+        
+        p {
+            margin-bottom: 30px;
+            line-height: 1.6;
+            color: #7f8c8d;
+        }
+        
+        .loader {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            animation: spin 2s linear infinite;
+            margin: 20px auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .enter-btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .enter-btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+    <script>
+        // 页面加载完成后自动跳转
+        window.onload = function() {
+            setTimeout(function() {
+                // 检查URL参数
+                const urlParams = new URLSearchParams(window.location.search);
+                const elementSymbol = urlParams.get('element');
+                
+                if (elementSymbol) {
+                    // 如果有元素参数，保留它
+                    window.location.href = "periodic_table.html?element=" + elementSymbol;
+                } else {
+                    // 否则直接跳转
+                    window.location.href = "periodic_table.html";
+                    }
+            }, 1500); // 延迟1.5秒后跳转
+        };
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>元素周期表 - 小学生学习版</h1>
+        <p>欢迎来到互动式元素周期表！这是一个专为小学生设计的学习工具，让你通过有趣的图片和视频了解化学元素的奥秘。</p>
+        <div class="loader"></div>
+        <p>正在加载精彩内容，请稍候...</p>
+        <a href="periodic_table.html" class="enter-btn">立即进入</a>
+        </div>
+</body>
+</html> 
