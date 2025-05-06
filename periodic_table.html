@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>化学元素周期表 - 小学生学习版</title>
+    <link rel="stylesheet" href="periodic_table.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>化学元素周期表</h1>
+            <p>点击元素可以了解更多信息！</p>
+        </header>
+        
+        <div class="periodic-table" id="periodicTable">
+            <!-- 周期表将通过JavaScript动态生成 -->
+        </div>
+        
+        <div class="element-details" id="elementDetails">
+            <div class="details-container">
+                <span class="close-btn" id="closeDetails">&times;</span>
+                <h2 id="elementName"></h2>
+                <div class="element-symbol" id="elementSymbol"></div>
+                <div class="element-info">
+                    <p><strong>原子序数:</strong> <span id="elementNumber"></span></p>
+                    <p><strong>原子量:</strong> <span id="elementWeight"></span></p>
+                    <p><strong>发现者:</strong> <span id="elementDiscoverer"></span></p>
+                    <p><strong>发现年份:</strong> <span id="elementYear"></span></p>
+                    <div class="element-media">
+                        <div class="element-image">
+                            <img id="elementImage" src="" alt="元素图片">
+                        </div>
+                        <div class="element-video" id="elementVideoContainer">
+                            <h3>观看有趣视频</h3>
+                            <iframe id="elementVideo" width="100%" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="element-story">
+                        <h3>发现故事</h3>
+                        <p id="elementStory"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>为小学生设计的化学元素周期表学习工具</p>
+    </footer>
+
+    <script src="elements_data.js"></script>
+    <script src="periodic_table.js"></script>
+</body>
+</html> 

@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial Rounded MT Bold', 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #7f8c8d;
+    font-size: 1.2rem;
+}
+
+.periodic-table {
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-gap: 3px;
+    margin-bottom: 30px;
+}
+
+.element {
+    aspect-ratio: 1/1;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.element:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+
+.element .number {
+    font-size: 0.6rem;
+    color: #95a5a6;
+    text-align: left;
+}
+
+.element .symbol {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.element .name {
+    font-size: 0.5rem;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 元素分类颜色 */
+.alkali-metal { background-color: #ffcccb; }
+.alkaline-earth { background-color: #ffdead; }
+.transition-metal { background-color: #ffb347; }
+.post-transition-metal { background-color: #a8e4a0; }
+.metalloid { background-color: #77dd77; }
+.nonmetal { background-color: #b0e0e6; }
+.noble-gas { background-color: #d8bfd8; }
+.lanthanide { background-color: #ffe4e1; }
+.actinide { background-color: #e6e6fa; }
+.unknown { background-color: #eeeeee; }
+
+/* 元素详情弹出框 */
+.element-details {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    overflow: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.element-details.active {
+    display: flex;
+}
+
+.details-container {
+    background-color: white;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 700px;
+    padding: 30px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    animation: popup 0.3s ease-out;
+}
+
+@keyframes popup {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #777;
+}
+
+.close-btn:hover {
+    color: #333;
+}
+
+.element-symbol {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+.element-info {
+    margin-top: 15px;
+}
+
+.element-info p {
+    margin: 8px 0;
+    font-size: 1.1rem;
+}
+
+.element-story {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.element-story h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.element-story p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.element-media {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.element-image {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.element-image img {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.element-image img:hover {
+    transform: scale(1.05);
+}
+
+.element-video {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.element-video h3 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.element-video iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+/* 适配移动设备 */
+@media (max-width: 768px) {
+    .periodic-table {
+        grid-template-columns: repeat(9, 1fr);
+    }
+    
+    .details-container {
+        width: 95%;
+        padding: 15px;
+    }
+    
+    header h1 {
+        font-size: 1.8rem;
+    }
+} 
