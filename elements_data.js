@@ -1,7 +1,3 @@
-// 移除这两行默认常量
-// const DEFAULT_ELEMENT_IMAGE = "https://via.placeholder.com/600x400/e0f7fa/006064?text=";
-// const DEFAULT_ELEMENT_VIDEO = "https://www.youtube.com/embed/rz4Dd1I_fX0";
-
 const elements = [
     // 第一周期
     {
@@ -9,28 +5,29 @@ const elements = [
         symbol: "H",
         name: "氢",
         chineseName: "氢",
-        pinyinName: "qīng",
         weight: "1.008",
         category: "nonmetal",
         group: 1, 
         period: 1,
         discoverer: "亨利·卡文迪许",
         year: "1766",
-        story: "卡文迪许在实验中发现当金属与酸反应时会产生一种轻质可燃气体，他称之为'可燃气'。后来拉瓦锡将其命名为'氢'(Hydrogen)，意为'产生水的元素'。氢是宇宙中最丰富、最简单的元素。"
+        story: "卡文迪许在实验中发现当金属与酸反应时会产生一种轻质可燃气体，他称之为'可燃气'。后来拉瓦锡将其命名为'氢'(Hydrogen)，意为'产生水的元素'。氢是宇宙中最丰富、最简单的元素。",
+        imageUrl: "https://images.unsplash.com/photo-1601964164741-bacb755e0270?w=600&auto=format&fit=crop",
+        videoUrl: "https://www.youtube.com/embed/qNFUzgDxCeM"
     },
     {
         number: 2,
         symbol: "He",
         name: "Helium",
         chineseName: "氦",
-        pinyinName: "hài",
         weight: "4.0026",
         category: "noble-gas",
         group: 18, 
         period: 1,
         discoverer: "皮埃尔·詹森",
         year: "1868",
-        story: "1868年，法国天文学家詹森在观测太阳日食时，在太阳光谱中发现了一条从未在地球元素中观察到的黄线。这种元素被命名为'氦'(Helium)，来源于希腊语中'太阳'的意思。直到1895年，氦才在地球上的矿物中被发现。"
+        story: "1868年，法国天文学家詹森在观测太阳日食时，在太阳光谱中发现了一条从未在地球元素中观察到的黄线。这种元素被命名为'氦'(Helium)，来源于希腊语中'太阳'的意思。直到1895年，氦才在地球上的矿物中被发现。",
+        imageUrl: "https://images.unsplash.com/photo-1527409024723-033dddf9f9d4?w=600&auto=format&fit=crop"
     },
     
     // 第二周期
@@ -39,42 +36,42 @@ const elements = [
         symbol: "Li",
         name: "Lithium",
         chineseName: "锂",
-        pinyinName: "lǐ",
         weight: "6.94",
         category: "alkali-metal",
         group: 1, 
         period: 2,
         discoverer: "约翰·奥古斯特·阿尔弗德松",
         year: "1817",
-        story: "锂元素于1817年由瑞典化学家阿尔弗德松在矿石中发现。他注意到这种新元素的化合物在火焰中呈现美丽的红色。'锂'(Lithium)这个名字来源于希腊语'lithos'，意为'石头'，因为它是在岩石中发现的。"
+        story: "锂元素于1817年由瑞典化学家阿尔弗德松在矿石中发现。他注意到这种新元素的化合物在火焰中呈现美丽的红色。'锂'(Lithium)这个名字来源于希腊语'lithos'，意为'石头'，因为它是在岩石中发现的。",
+        imageUrl: "https://images.unsplash.com/photo-1563905457637-f76e198b8107?w=600&auto=format&fit=crop"
     },
     {
         number: 4,
         symbol: "Be",
         name: "Beryllium",
         chineseName: "铍",
-        pinyinName: "pí",
         weight: "9.0122",
         category: "alkaline-earth",
         group: 2, 
         period: 2,
         discoverer: "路易·尼古拉·沃克兰",
         year: "1798",
-        story: "1798年，法国化学家沃克兰从绿柱石和祖母绿中分离出了一种新的氧化物，他将其命名为'甜土'，因为它的盐有甜味。后来这种元素被命名为'铍'(Beryllium)，来源于绿柱石的希腊名称'beryllos'。"
+        story: "1798年，法国化学家沃克兰从绿柱石和祖母绿中分离出了一种新的氧化物，他将其命名为'甜土'，因为它的盐有甜味。后来这种元素被命名为'铍'(Beryllium)，来源于绿柱石的希腊名称'beryllos'。",
+        imageUrl: "https://images.pexels.com/photos/163016/emerald-green-gem-jewel-163016.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
         number: 5,
         symbol: "B",
         name: "Boron",
         chineseName: "硼",
-        pinyinName: "péng",
         weight: "10.81",
         category: "metalloid",
         group: 13, 
         period: 2,
         discoverer: "约瑟夫·路易·盖-吕萨克和路易·雅克·泰纳德",
         year: "1808",
-        story: "硼元素在1808年由法国科学家盖-吕萨克和泰纳德共同发现。他们通过用钾还原硼酸，获得了不纯的硼。'硼'(Boron)这个名字来源于阿拉伯语'buraq'，指的是硼砂。硼在很多日常用品中都有应用，如玻璃、洗涤剂等。"
+        story: "硼元素在1808年由法国科学家盖-吕萨克和泰纳德共同发现。他们通过用钾还原硼酸，获得了不纯的硼。'硼'(Boron)这个名字来源于阿拉伯语'buraq'，指的是硼砂。硼在很多日常用品中都有应用，如玻璃、洗涤剂等。",
+        imageUrl: "https://images.pexels.com/photos/4347867/pexels-photo-4347867.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
         number: 6,
@@ -87,7 +84,9 @@ const elements = [
         period: 2,
         discoverer: "古代已知",
         year: "古代",
-        story: "碳元素自古以来就以木炭、煤和钻石等形式被人类所熟知。古埃及人早在公元前3750年就已经用木炭冶炼铜。'碳'(Carbon)这个名字来源于拉丁语'carbo'，意为'木炭'。碳是生命的基础元素，也是有机化学的核心。"
+        story: "碳元素自古以来就以木炭、煤和钻石等形式被人类所熟知。古埃及人早在公元前3750年就已经用木炭冶炼铜。'碳'(Carbon)这个名字来源于拉丁语'carbo'，意为'木炭'。碳是生命的基础元素，也是有机化学的核心。",
+        imageUrl: "https://images.unsplash.com/photo-1565807159948-4276f785d567?w=600&auto=format&fit=crop",
+        videoUrl: "https://www.youtube.com/embed/YQJ0x_jlBfE"
     },
     {
         number: 7,
@@ -100,7 +99,8 @@ const elements = [
         period: 2,
         discoverer: "丹尼尔·卢瑟福",
         year: "1772",
-        story: "1772年，苏格兰医生卢瑟福发现空气中存在一种气体，不支持燃烧也不支持呼吸。他将这种气体称为'有害空气'。后来拉瓦锡将其命名为'氮'(Nitrogen)，意为'无生命的'。氮气占地球大气的78%。"
+        story: "1772年，苏格兰医生卢瑟福发现空气中存在一种气体，不支持燃烧也不支持呼吸。他将这种气体称为'有害空气'。后来拉瓦锡将其命名为'氮'(Nitrogen)，意为'无生命的'。氮气占地球大气的78%。",
+        imageUrl: "https://images.unsplash.com/photo-1628863353691-0829ae9e6400?w=600&auto=format&fit=crop"
     },
     {
         number: 8,
@@ -113,7 +113,8 @@ const elements = [
         period: 2,
         discoverer: "卡尔·威廉·舍勒",
         year: "1771",
-        story: "氧气最早于1771年由瑞典药剂师舍勒发现，但他的发现直到1777年才发表。同时，英国科学家普利斯特利于1774年独立发现了氧气，并将其结果先于舍勒发表。拉瓦锡后来将这种气体命名为'氧'(Oxygen)，意为'酸的生成者'。"
+        story: "氧气最早于1771年由瑞典药剂师舍勒发现，但他的发现直到1777年才发表。同时，英国科学家普利斯特利于1774年独立发现了氧气，并将其结果先于舍勒发表。拉瓦锡后来将这种气体命名为'氧'(Oxygen)，意为'酸的生成者'。",
+        imageUrl: "https://images.unsplash.com/photo-1607619020098-278a114438e9?w=600&auto=format&fit=crop"
     },
     {
         number: 9,
@@ -126,7 +127,8 @@ const elements = [
         period: 2,
         discoverer: "亨利·莫瓦桑",
         year: "1886",
-        story: "氟是最活泼的元素之一，这使得它难以被分离出来。许多科学家在尝试分离氟的过程中遭受了严重伤害。最终，法国化学家莫瓦桑在1886年成功地通过电解氟化氢得到了纯氟。'氟'(Fluorine)这个名字来源于拉丁语'fluere'，意为'流动'。"
+        story: "氟是最活泼的元素之一，这使得它难以被分离出来。许多科学家在尝试分离氟的过程中遭受了严重伤害。最终，法国化学家莫瓦桑在1886年成功地通过电解氟化氢得到了纯氟。'氟'(Fluorine)这个名字来源于拉丁语'fluere'，意为'流动'。",
+        imageUrl: "https://images.pexels.com/photos/3014893/pexels-photo-3014893.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
         number: 10,
@@ -139,7 +141,8 @@ const elements = [
         period: 2,
         discoverer: "威廉·拉姆齐和莫里斯·特拉沃斯",
         year: "1898",
-        story: "氖元素于1898年由英国科学家拉姆齐和特拉沃斯在研究液态空气时发现。'氖'(Neon)这个名字来源于希腊语'neos'，意为'新的'。氖是第一个被发现会发光的气体，现在广泛用于霓虹灯中，给城市带来了五彩缤纷的夜景。"
+        story: "氖元素于1898年由英国科学家拉姆齐和特拉沃斯在研究液态空气时发现。'氖'(Neon)这个名字来源于希腊语'neos'，意为'新的'。氖是第一个被发现会发光的气体，现在广泛用于霓虹灯中，给城市带来了五彩缤纷的夜景。",
+        imageUrl: "https://images.unsplash.com/photo-1621155346337-1d19476ba7d6?w=600&auto=format&fit=crop"
     },
 
     // 这里只包含前20个元素作为示例，实际应用中可以添加全部118个元素
@@ -149,77 +152,77 @@ const elements = [
         symbol: "Na",
         name: "Sodium",
         chineseName: "钠",
-        pinyinName: "nà",
         weight: "22.990",
         category: "alkali-metal",
         group: 1, 
         period: 3,
         discoverer: "汉弗莱·戴维",
         year: "1807",
-        story: "1807年，英国化学家戴维通过电解熔融的氢氧化钠成功分离出了钠金属。他观察到这种新金属非常活泼，会在空气中迅速氧化。'钠'(Sodium)这个名字来源于阿拉伯语'suda'，意为'头痛的治疗'，因为钠的碳酸盐被用作治疗头痛的药物。"
+        story: "1807年，英国化学家戴维通过电解熔融的氢氧化钠成功分离出了钠金属。他观察到这种新金属非常活泼，会在空气中迅速氧化。'钠'(Sodium)这个名字来源于阿拉伯语'suda'，意为'头痛的治疗'，因为钠的碳酸盐被用作治疗头痛的药物。",
+        imageUrl: "https://images.unsplash.com/photo-1623640094594-572cb802c0bd?w=600&auto=format&fit=crop",
+        videoUrl: "https://www.youtube.com/embed/oqMN3y8k9So"
     },
     {
         number: 12,
         symbol: "Mg",
         name: "Magnesium",
         chineseName: "镁",
-        pinyinName: "měi",
         weight: "24.305",
         category: "alkaline-earth",
         group: 2, 
         period: 3,
         discoverer: "约瑟夫·布莱克",
         year: "1755",
-        story: "1755年，苏格兰化学家布莱克首次认识到氧化镁与石灰是不同的物质。1808年，戴维通过电解氧化镁首次制备出不纯的镁。'镁'(Magnesium)这个名字来源于希腊语'magnesia'，这是一个古代城市名，那里出产含镁的矿物。"
+        story: "1755年，苏格兰化学家布莱克首次认识到氧化镁与石灰是不同的物质。1808年，戴维通过电解氧化镁首次制备出不纯的镁。'镁'(Magnesium)这个名字来源于希腊语'magnesia'，这是一个古代城市名，那里出产含镁的矿物。",
+        imageUrl: "https://images.unsplash.com/photo-1556227834-09f1de5c1cea?w=600&auto=format&fit=crop"
     },
     {
         number: 13,
         symbol: "Al",
         name: "Aluminum",
         chineseName: "铝",
-        pinyinName: "lǚ",
         weight: "26.982",
         category: "post-transition-metal",
         group: 13, 
         period: 3,
         discoverer: "汉斯·克里斯蒂安·厄斯特德",
         year: "1825",
-        story: "虽然铝化合物自古以来就被用于染料和药物，但纯铝直到1825年才被丹麦科学家厄斯特德首次分离出来。由于制备纯铝的困难，铝曾一度比黄金还贵重。1886年，霍尔和埃鲁发明了电解法生产铝，使铝成为常见金属。'铝'(Aluminum)这个名字来源于拉丁语'alumen'，指的是明矾。"
+        story: "虽然铝化合物自古以来就被用于染料和药物，但纯铝直到1825年才被丹麦科学家厄斯特德首次分离出来。由于制备纯铝的困难，铝曾一度比黄金还贵重。1886年，霍尔和埃鲁发明了电解法生产铝，使铝成为常见金属。'铝'(Aluminum)这个名字来源于拉丁语'alumen'，指的是明矾。",
+        imageUrl: "https://images.unsplash.com/photo-1602383247837-51c566bf2e49?w=600&auto=format&fit=crop"
     },
     {
         number: 14,
         symbol: "Si",
         name: "Silicon",
         chineseName: "硅",
-        pinyinName: "guī",
         weight: "28.085",
         category: "metalloid",
         group: 14, 
         period: 3,
         discoverer: "约恩斯·雅各布·贝采利乌斯",
         year: "1824",
-        story: "1824年，瑞典化学家贝采利乌斯通过加热氟硅酸钾与钾得到了非晶态硅。'硅'(Silicon)这个名字来源于拉丁语'silex'或'silicis'，意为'燧石'。硅是地球地壳中第二丰富的元素，现代电子工业的基础。"
+        story: "1824年，瑞典化学家贝采利乌斯通过加热氟硅酸钾与钾得到了非晶态硅。'硅'(Silicon)这个名字来源于拉丁语'silex'或'silicis'，意为'燧石'。硅是地球地壳中第二丰富的元素，现代电子工业的基础。",
+        imageUrl: "https://images.unsplash.com/photo-1573663520878-8a98bb0f8cb5?w=600&auto=format&fit=crop"
     },
     {
         number: 15,
         symbol: "P",
         name: "Phosphorus",
         chineseName: "磷",
-        pinyinName: "lín",
         weight: "30.974",
         category: "nonmetal",
         group: 15, 
         period: 3,
         discoverer: "亨宁·布兰德",
         year: "1669",
-        story: "磷是第一个被发现的不是自古就知道的元素。1669年，德国炼金术士布兰德在尝试从人尿中提取'点石成金'的物质时，意外发现了一种在黑暗中发光的物质，他将其命名为'磷'(Phosphorus)，源自希腊语'带来光明的'。白磷在空气中会自燃，这使得它成为火柴的重要成分。"
+        story: "磷是第一个被发现的不是自古就知道的元素。1669年，德国炼金术士布兰德在尝试从人尿中提取'点石成金'的物质时，意外发现了一种在黑暗中发光的物质，他将其命名为'磷'(Phosphorus)，源自希腊语'带来光明的'。白磷在空气中会自燃，这使得它成为火柴的重要成分。",
+        imageUrl: "https://images.unsplash.com/photo-1515444347446-4347d4c95fd1?w=600&auto=format&fit=crop"
     },
     {
         number: 16,
         symbol: "S",
         name: "Sulfur",
         chineseName: "硫",
-        pinyinName: "liú",
         weight: "32.06",
         category: "nonmetal",
         group: 16, 
@@ -233,7 +236,6 @@ const elements = [
         symbol: "Cl",
         name: "Chlorine",
         chineseName: "氯",
-        pinyinName: "lǜ",
         weight: "35.45",
         category: "nonmetal",
         group: 17, 
@@ -247,7 +249,6 @@ const elements = [
         symbol: "Ar",
         name: "Argon",
         chineseName: "氩",
-        pinyinName: "yà",
         weight: "39.948",
         category: "noble-gas",
         group: 18, 
@@ -263,7 +264,6 @@ const elements = [
         symbol: "K",
         name: "Potassium",
         chineseName: "钾",
-        pinyinName: "jiǎ",
         weight: "39.098",
         category: "alkali-metal",
         group: 1, 
@@ -277,7 +277,6 @@ const elements = [
         symbol: "Ca",
         name: "Calcium",
         chineseName: "钙",
-        pinyinName: "gài",
         weight: "40.078",
         category: "alkaline-earth",
         group: 2, 
@@ -293,7 +292,6 @@ const elements = [
         symbol: "Sc",
         name: "Scandium",
         chineseName: "钪",
-        pinyinName: "kàng",
         weight: "44.956",
         category: "transition-metal",
         group: 3, 
@@ -307,7 +305,6 @@ const elements = [
         symbol: "Ti",
         name: "Titanium",
         chineseName: "钛",
-        pinyinName: "tài",
         weight: "47.867",
         category: "transition-metal",
         group: 4, 
@@ -321,7 +318,6 @@ const elements = [
         symbol: "V",
         name: "Vanadium",
         chineseName: "钒",
-        pinyinName: "fán",
         weight: "50.942",
         category: "transition-metal",
         group: 5, 
@@ -335,7 +331,6 @@ const elements = [
         symbol: "Cr",
         name: "Chromium",
         chineseName: "铬",
-        pinyinName: "gè",
         weight: "51.996",
         category: "transition-metal",
         group: 6, 
@@ -349,7 +344,6 @@ const elements = [
         symbol: "Mn",
         name: "Manganese",
         chineseName: "锰",
-        pinyinName: "měng",
         weight: "54.938",
         category: "transition-metal",
         group: 7, 
@@ -363,21 +357,20 @@ const elements = [
         symbol: "Fe",
         name: "Iron",
         chineseName: "铁",
-        pinyinName: "tiě",
         weight: "55.845",
         category: "transition-metal",
         group: 8, 
         period: 4,
         discoverer: "古代已知",
         year: "古代",
-        story: "铁是最早被人类使用的金属之一，早在公元前4000年就有了铁器。然而，大规模冶炼和使用铁器始于公元前1200年左右的赫梯人。'铁'(Iron)这个词来源于盎格鲁-撒克逊语'iren'。铁是地球核心的主要成分，也是人体中必不可少的元素。"
+        story: "铁是最早被人类使用的金属之一，早在公元前4000年就有了铁器。然而，大规模冶炼和使用铁器始于公元前1200年左右的赫梯人。'铁'(Iron)这个词来源于盎格鲁-撒克逊语'iren'。铁是地球核心的主要成分，也是人体中必不可少的元素。",
+        imageUrl: "https://images.unsplash.com/photo-1536566482680-fca31930a0bd?w=600&auto=format&fit=crop"
     },
     {
         number: 27,
         symbol: "Co",
         name: "Cobalt",
         chineseName: "钴",
-        pinyinName: "gǔ",
         weight: "58.933",
         category: "transition-metal",
         group: 9, 
@@ -391,7 +384,6 @@ const elements = [
         symbol: "Ni",
         name: "Nickel",
         chineseName: "镍",
-        pinyinName: "niè",
         weight: "58.693",
         category: "transition-metal",
         group: 10, 
@@ -405,7 +397,6 @@ const elements = [
         symbol: "Cu",
         name: "Copper",
         chineseName: "铜",
-        pinyinName: "tóng",
         weight: "63.546",
         category: "transition-metal",
         group: 11, 
@@ -419,7 +410,6 @@ const elements = [
         symbol: "Zn",
         name: "Zinc",
         chineseName: "锌",
-        pinyinName: "xīn",
         weight: "65.38",
         category: "transition-metal",
         group: 12, 
@@ -433,7 +423,6 @@ const elements = [
         symbol: "Ga",
         name: "Gallium",
         chineseName: "镓",
-        pinyinName: "jiā",
         weight: "69.723",
         category: "post-transition-metal",
         group: 13, 
@@ -447,7 +436,6 @@ const elements = [
         symbol: "Ge",
         name: "Germanium",
         chineseName: "锗",
-        pinyinName: "zhě",
         weight: "72.630",
         category: "metalloid",
         group: 14, 
@@ -461,7 +449,6 @@ const elements = [
         symbol: "As",
         name: "Arsenic",
         chineseName: "砷",
-        pinyinName: "shēn",
         weight: "74.922",
         category: "metalloid",
         group: 15, 
@@ -475,7 +462,6 @@ const elements = [
         symbol: "Se",
         name: "Selenium",
         chineseName: "硒",
-        pinyinName: "xī",
         weight: "78.971",
         category: "nonmetal",
         group: 16, 
@@ -489,7 +475,6 @@ const elements = [
         symbol: "Br",
         name: "Bromine",
         chineseName: "溴",
-        pinyinName: "xiù",
         weight: "79.904",
         category: "nonmetal",
         group: 17, 
@@ -503,7 +488,6 @@ const elements = [
         symbol: "Kr",
         name: "Krypton",
         chineseName: "氪",
-        pinyinName: "kè",
         weight: "83.798",
         category: "noble-gas",
         group: 18, 
@@ -517,7 +501,6 @@ const elements = [
         symbol: "Rb",
         name: "Rubidium",
         chineseName: "铷",
-        pinyinName: "rú",
         weight: "85.468",
         category: "alkali-metal",
         group: 1, 
@@ -531,7 +514,6 @@ const elements = [
         symbol: "Sr",
         name: "Strontium",
         chineseName: "锶",
-        pinyinName: "sī",
         weight: "87.62",
         category: "alkaline-earth",
         group: 2, 
@@ -545,7 +527,6 @@ const elements = [
         symbol: "Y",
         name: "Yttrium",
         chineseName: "钇",
-        pinyinName: "yǐ",
         weight: "88.906",
         category: "transition-metal",
         group: 3, 
@@ -656,7 +637,8 @@ const elements = [
         period: 5,
         discoverer: "古代已知",
         year: "古代",
-        story: "银自古以来就被人类用于制作装饰品和货币，至少可以追溯到公元前5000年。'银'(Silver)这个名字来源于盎格鲁-撒克逊语'seolfor'。银因其高反射率和导电性而闻名，也是唯一一种能够反射所有可见光波长的金属，使其成为制作镜子的理想材料。"
+        story: "银自古以来就被人类用于制作装饰品和货币，至少可以追溯到公元前5000年。'银'(Silver)这个名字来源于盎格鲁-撒克逊语'seolfor'。银因其高反射率和导电性而闻名，也是唯一一种能够反射所有可见光波长的金属，使其成为制作镜子的理想材料。",
+        imageUrl: "https://images.unsplash.com/photo-1609093578825-38ac8a2ca8af?w=600&auto=format&fit=crop"
     },
     {
         number: 48,
@@ -838,7 +820,7 @@ const elements = [
         period: 6,
         discoverer: "杰克·马里斯基、劳伦斯·格伦丹宁和查尔斯·科赖尔",
         year: "1945",
-        story: "钷是唯一一种在自然界中不存在的稀土元素，所有钷同位素都是放射性的。1945年，美国科学家马里斯基、格伦丹宁和科赖尔在橡树岭国家实验室通过铀核裂变产物中首次分离出钷。'钷'(Promethium)这个名字来源于希腊神话中的人物普罗米修斯(Prometheus)，他偷火给人类。钷可以通过核反应生产，主要用于手表、仪表和航天器上的自发光源，也用于原子电池。钷在医学上也有应用，如用于治疗视网膜脱离引起的疼痛。"
+        story: "钷是唯一一种在自然界中不存在的稀土元素，所有钷同位素都是放射性的。1945年，美国科学家马里斯基、格伦丹宁和科赖尔在橡树岭国家实验室通过铀核裂变产物中首次分离出钷。'钷'(Promethium)这个名字来源于希腊神话中的人物普罗米修斯(Prometheus)，他偷火给人类。钷可以通过核反应生产，主要用于手表、仪表和航天器上的自发光源，也用于原子电池。钷在医学上也有应用，如用于治疗视网膜脱离。"
     },
     {
         number: 62,
@@ -1072,7 +1054,8 @@ const elements = [
         period: 6,
         discoverer: "古代已知",
         year: "古代",
-        story: "金是人类最早认识和使用的金属之一，至少从公元前4000年就开始被用于装饰和货币。'金'(Gold)这个名字来源于古英语'geolu'，意为'黄色'，而元素符号Au来自拉丁语'aurum'。金因其美丽的黄色光泽、稀有性、可锻性和耐腐蚀性而受到珍视。金在古代被视为财富和权力的象征，现代仍然是重要的投资品和珠宝材料。金还因其优异的导电性而广泛用于电子工业。"
+        story: "金是人类最早认识和使用的金属之一，至少从公元前4000年就开始被用于装饰和货币。'金'(Gold)这个名字来源于古英语'geolu'，意为'黄色'，而元素符号Au来自拉丁语'aurum'。金因其美丽的黄色光泽、稀有性、可锻性和耐腐蚀性而受到珍视。金主要用于珠宝、投资和电子工业。金是极好的导体，不会氧化，因此在高端电子设备中被用作连接器和电路。在医学上，金化合物被用于治疗类风湿性关节炎，而放射性金同位素用于癌症治疗。",
+        imageUrl: "https://images.unsplash.com/photo-1610375461246-83df859d849d?w=600&auto=format&fit=crop"
     },
     {
         number: 80,
@@ -1088,88 +1071,32 @@ const elements = [
         story: "汞自古以来就为人所知，早在公元前2000年的古埃及墓葬中就发现了含汞的物品。'汞'(Mercury)这个名字来源于罗马神话中的信使神墨丘利，象征其活泼流动的特性，而元素符号Hg来自拉丁语'hydrargyrum'，意为'水银'。汞是唯一在常温下呈液态的金属元素。历史上，汞被用于温度计、气压计、开关和牙科汞合金。然而，由于其毒性，许多这些用途现已被淘汰。汞化合物曾被用作药物和防腐剂，但同样因毒性问题而被替代。著名的'疯帽匠'形象来源于19世纪制帽工人因长期接触汞而出现的汞中毒症状。"
     },
     {
-        number: 81,
-        symbol: "Tl",
-        name: "Thallium",
-        chineseName: "铊",
-        pinyinName: "tā",
-        weight: "204.38",
-        category: "post-transition-metal",
-        group: 13, 
-        period: 6,
-        discoverer: "威廉·克鲁克斯",
-        year: "1861",
-        story: "1861年，英国化学家克鲁克斯在硫酸厂的残渣中发现了铊。'铊'(Thallium)这个名字来源于希腊语'thallos'，意为'绿枝'，因为铊在火焰中呈现鲜艳的绿色。铊及其化合物剧毒，曾经被用作杀鼠剂和杀虫剂，直到因其高毒性而被禁止。尽管有毒，铊在电子、玻璃制造和特殊合金中仍有应用。铊中毒案例在犯罪历史中时有发生，因为铊盐无色无味，且中毒症状与其他疾病相似。"
-    },
-    {
         number: 82,
         symbol: "Pb",
         name: "Lead",
         chineseName: "铅",
-        pinyinName: "qiān",
         weight: "207.2",
         category: "post-transition-metal",
         group: 14, 
         period: 6,
         discoverer: "古代已知",
         year: "古代",
-        story: "铅是最早被人类使用的金属之一，古埃及人早在公元前4000年就开始使用铅。罗马人广泛使用铅制造水管和器皿，甚至用含铅化合物制作食品添加剂。'铅'(Lead)的元素符号Pb来自拉丁语'plumbum'。长期接触铅会导致严重的健康问题，这一点在20世纪才被广泛认识。现代社会已经大大减少了铅的使用，特别是在汽油、油漆和管道中。"
+        story: "铅是最早被人类使用的金属之一，古埃及人早在公元前4000年就开始使用铅。罗马人广泛使用铅制造水管和器皿，甚至用含铅化合物制作食品添加剂。'铅'(Lead)的元素符号Pb来自拉丁语'plumbum'。长期接触铅会导致严重的健康问题，这一点在20世纪才被广泛认识。现代社会已经大大减少了铅的使用，特别是在汽油、油漆和管道中。",
+        imageUrl: "https://images.unsplash.com/photo-1578127033626-989754f5fae8?w=600&auto=format&fit=crop"
     },
     {
-        number: 83,
-        symbol: "Bi",
-        name: "Bismuth",
-        chineseName: "铋",
-        pinyinName: "bì",
-        weight: "208.98",
-        category: "post-transition-metal",
-        group: 15, 
-        period: 6,
-        discoverer: "克劳德·杰弗里·杰奥夫罗伊",
-        year: "1753",
-        story: "虽然铋矿物自古以来就被认识，但直到1753年才被法国药剂师杰奥夫罗伊确立为独立元素。'铋'(Bismuth)这个名字可能来源于德语'wismuth'。铋是一种带有粉红色光泽的银白色金属，形成美丽的彩虹色氧化层。铋是少数几种体积在凝固时会膨胀的金属之一。由于其低毒性，铋化合物已经取代了许多含铅产品，如药物、化妆品和子弹。铋也用于低熔点合金，如自动喷淋系统中的保险丝。"
-    },
-    {
-        number: 84,
-        symbol: "Po",
-        name: "Polonium",
-        chineseName: "钋",
-        pinyinName: "pō",
-        weight: "209",
-        category: "post-transition-metal",
-        group: 16, 
-        period: 6,
-        discoverer: "玛丽·居里",
-        year: "1898",
-        story: "1898年，玛丽·居里和皮埃尔·居里在沥青铀矿中发现了钋。'钋'(Polonium)以玛丽·居里的祖国波兰(Poland)命名。钋是一种极其稀有的放射性元素，所有同位素都不稳定。钋-210是最常见的同位素，半衰期约为138天。钋是强α粒子发射体，这使它在少量下也具有极高的毒性。历史上，钋被用作中子源和消除静电的工具。有趣的是，钋是杀死前俄罗斯特工亚历山大·利特维年科的毒物。"
-    },
-    {
-        number: 85,
-        symbol: "At",
-        name: "Astatine",
-        chineseName: "砹",
-        pinyinName: "ài",
-        weight: "210",
-        category: "halogen",
-        group: 17, 
-        period: 6,
-        discoverer: "戴尔·科尔森",
-        year: "1940",
-        story: "1940年，美国物理学家科尔森、麦肯齐和西格尔通过轰击铋靶制造出了砹。'砹'(Astatine)这个名字来源于希腊语'astatos'，意为'不稳定的'。砹是地球上最稀有的自然元素，估计地壳中的总量不到1克。砹的所有同位素都具有放射性，最稳定的砹-210的半衰期仅为8.1小时。由于其极度稀有和不稳定，砹的性质大多是基于预测和有限的实验。砹的一些同位素在放射性治疗中有潜在应用，特别是靶向α治疗。"
-    },
-    {
-        number: 86,
-        symbol: "Rn",
-        name: "Radon",
-        chineseName: "氡",
-        pinyinName: "dōng",
-        weight: "222",
-        category: "noble-gas",
-        group: 18, 
-        period: 6,
-        discoverer: "弗里德里希·恩斯特·多恩",
-        year: "1900",
-        story: "1900年，德国物理学家多恩在研究镭时发现了一种放射性气体，最初称为'镭射气'。'氡'(Radon)这个名字由镭(Radium)衍生而来。氡是一种无色、无味、无嗅的放射性惰性气体，是自然界中密度最大的气体。氡是铀和镭衰变链中的产物，常见于地下矿井和某些建筑物的地下室。氡及其衰变产物吸入肺部后会增加肺癌风险，是美国室内空气污染的主要原因。然而，氡也被用于某些温泉治疗和放射性治疗。"
-    },
+        number: 92,
+        symbol: "U",
+        name: "Uranium",
+        chineseName: "铀",
+        weight: "238.03",
+        category: "actinide",
+        group: 3, 
+        period: 7,
+        discoverer: "马丁·海因里希·克拉普罗特",
+        year: "1789",
+        story: "铀元素于1789年由德国化学家克拉普罗特在沥青铀矿中发现，并以当时新发现的天王星(Uranus)命名。铀的放射性直到1896年才被贝克勒尔发现。铀-235是唯一天然存在的可裂变同位素，可用于核反应堆和核武器。铀矿石常呈现黄绿色荧光，这使得它成为19世纪和20世纪初期玻璃和陶瓷的流行着色剂，直到其放射性危害被认识。",
+        imageUrl: "https://images.unsplash.com/photo-1581922517927-ce1df90a5b55?w=600&auto=format&fit=crop"
+    }
     // ... 后续将添加更多元素
 ]; 

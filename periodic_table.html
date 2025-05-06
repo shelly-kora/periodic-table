@@ -3,11 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="为小学生设计的互动式化学元素周期表，包含各元素的发现历史">
-    <meta name="keywords" content="元素周期表,化学,小学生,教育,互动学习">
     <title>化学元素周期表 - 小学生学习版</title>
     <link rel="stylesheet" href="periodic_table.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <div class="container">
@@ -20,66 +17,39 @@
             <!-- 周期表将通过JavaScript动态生成 -->
         </div>
         
-        <div id="elementDetails" class="element-details">
-            <button id="closeDetails" class="close-button">×</button>
-            <div class="details-content">
-                <div class="details-header">
-                    <div class="element-number" id="elementNumber"></div>
-                    <div class="element-info">
-                        <div class="element-name" id="elementName"></div>
-                        <div id="elementPinyin" class="element-pinyin"></div>
-                        <div class="element-symbol-container">
-                            <div class="element-symbol" id="elementSymbol"></div>
-                        </div>
-                        <div class="element-weight" id="elementWeight"></div>
-                    </div>
-                </div>
+        <div class="element-details" id="elementDetails">
+            <div class="details-container">
+                <span class="close-btn" id="closeDetails">&times;</span>
+                <h2 id="elementName"></h2>
+                <div class="element-symbol" id="elementSymbol"></div>
                 <div class="element-info">
+                    <p><strong>原子序数:</strong> <span id="elementNumber"></span></p>
+                    <p><strong>原子量:</strong> <span id="elementWeight"></span></p>
                     <p><strong>发现者:</strong> <span id="elementDiscoverer"></span></p>
                     <p><strong>发现年份:</strong> <span id="elementYear"></span></p>
+                    <div class="element-media">
+                        <div class="element-image">
+                            <img id="elementImage" src="" alt="元素图片">
+                        </div>
+                        <div class="element-video" id="elementVideoContainer">
+                            <h3>观看有趣视频</h3>
+                            <iframe id="elementVideo" width="100%" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
                     <div class="element-story">
                         <h3>发现故事</h3>
                         <p id="elementStory"></p>
                     </div>
-                    <div class="share-element">
-                        <h3>分享这个元素</h3>
-                        <div class="share-buttons">
-                            <button class="share-btn" id="copyLinkBtn" title="复制链接">
-                                <i class="fas fa-link"></i> 复制链接
-                            </button>
-                            <button class="share-btn" id="shareWechatBtn" title="分享到微信">
-                                <i class="fab fa-weixin"></i> 微信
-                            </button>
-                            <button class="share-btn" id="shareWeiboBtn" title="分享到微博">
-                                <i class="fab fa-weibo"></i> 微博
-                            </button>
-                        </div>
-                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="how-to-use">
-            <h2>如何使用这个周期表</h2>
-            <ul>
-                <li><i class="fas fa-hand-pointer"></i> 点击任意元素查看详细信息</li>
-                <li><i class="fas fa-book-reader"></i> 阅读关于元素发现的有趣故事</li>
-                <li><i class="fas fa-share-alt"></i> 与朋友分享你喜欢的元素</li>
-            </ul>
         </div>
     </div>
 
     <footer>
         <p>为小学生设计的化学元素周期表学习工具</p>
-        <p class="copyright">&copy; <span id="currentYear"></span> 元素周期表教育项目</p>
     </footer>
 
-    <script>
-        // 设置当前年份
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-    </script>
     <script src="elements_data.js"></script>
-    <script src="pinyin_supplement.js"></script>
     <script src="periodic_table.js"></script>
 </body>
 </html> 
